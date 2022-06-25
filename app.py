@@ -25,7 +25,7 @@ def prediction():
             predict = 'FAKE'
         
 
-        return render_template("prediction.html", prediction_text="News Headline is : {}".format(predict))
+        return render_template("./templates/prediction.html", prediction_text="News Headline is : {}".format(predict))
     
     
     else:
