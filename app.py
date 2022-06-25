@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template("./templates/index.html")
+    return render_template("index.html")
 
 
 @app.route('/prediction', methods=['GET', 'POST'])
@@ -25,7 +25,7 @@ def prediction():
             predict = 'FAKE'
         
 
-        return render_template("./templates/prediction.html", prediction_text="News Headline is : {}".format(predict))
+        return render_template("prediction.html", prediction_text="News Headline is : {}".format(predict))
     
     
     else:
